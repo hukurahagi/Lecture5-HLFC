@@ -15,6 +15,8 @@ Vagrant.configure("2") do |config|
     config.vm.network "forwarded_port", guest: 8080, host: 8080
     # For REST Server
     config.vm.network "forwarded_port", guest: 3000, host: 3000
+    # For Angular
+    config.vm.network "forwarded_port", guest: 4200, host: 4200
     # For Docker Deamon
     config.vm.network "forwarded_port", guest: 2375, host: 2375
     # For Orderer Container
